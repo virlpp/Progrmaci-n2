@@ -435,7 +435,38 @@ public class TrabajoPracticoII {
     
     // Ejercicio 13: Impresión recursiva de arrays antes y después de modificar un elemento.
     
-    
+    public static void main(String[] args) {
+        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8)); //Función para codificar caracteres españoles
+        
+        double[] listaProd = {3.5, 5, 6, 9.4, 15.2};
+        
+        //Imprimir precios original
+        impListaOriginal (listaProd, 0);
+        
+        listaProd[0] = 150;
+        
+        System.out.println("Lista modificada:");
+        impListaNueva (listaProd, 0);
+
+        
+    }
+
+    public static void impListaOriginal(double[] listaProd, int i) {
+        
+        if (i != listaProd.length) {
+            System.out.println(listaProd[i]);
+            impListaOriginal (listaProd, i+1);
+        } 
+       
+    }
+    public static void impListaNueva(double[] listaProd, int i) {
+        
+        if (i != listaProd.length) {
+            System.out.println(listaProd[i]);
+            impListaOriginal (listaProd, i+1);
+        } 
+       
+    }
     
     
 }  
