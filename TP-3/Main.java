@@ -10,6 +10,8 @@ public class TPIII {
           
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
+      //Ejercicio 1
+            
         Estudiante est1 = new Estudiante();
         est1.nombre = "Enriqueta";
         est1.apellido = "Ramirez";
@@ -23,6 +25,20 @@ public class TPIII {
         
         est1.bajarCalificacion(3);
         est1.mostrarInfo();
+
+      //Ejercicio 2
+
+        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
+        
+        Mascotas masc1 = new Mascotas();
+        
+        masc1.nombre = "Jacinto";
+        masc1.especie = "Perro";
+        masc1.edad = 5;
+        
+        masc1.mostrarInfo();
+        masc1.cumplirAnios();
+
 
     }
     
