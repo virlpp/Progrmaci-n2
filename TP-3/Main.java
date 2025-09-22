@@ -27,8 +27,6 @@ public class TPIII {
         est1.mostrarInfo();
 
       //Ejercicio 2
-
-        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
         
         Mascotas masc1 = new Mascotas();
         
@@ -39,7 +37,25 @@ public class TPIII {
         masc1.mostrarInfo();
         masc1.cumplirAnios();
 
+      //Ejercicio 3
+            
+        Libro nuevoLibro = new Libro();  
+        
+        nuevoLibro.setTitulo("Un mundo feliz");
+        
+        nuevoLibro.setAutor("Aldous Huxley");
+        
+        nuevoLibro.setAñoPublicacion(2500);
+        
+        // Muestra información con año inválido
+        nuevoLibro.mostrarInfo();
+        
+        // Muestra información con año inválido
+        nuevoLibro.setAñoPublicacion(1932);
+        nuevoLibro.mostrarInfo();
 
+            
+    }
     }
     
 }
