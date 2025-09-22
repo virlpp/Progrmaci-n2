@@ -54,7 +54,32 @@ public class TPIII {
         nuevoLibro.setAñoPublicacion(1932);
         nuevoLibro.mostrarInfo();
 
-            
+      //Ejercicio 4 
+        gallina1.setIdGallina(145);
+        gallina1.setEdadGallina(3);
+        gallina1.setHuevosPuestos(4);
+        
+        
+        gallina2.setIdGallina(312);
+        gallina2.setEdadGallina(1);
+        gallina2.setHuevosPuestos(1);
+        
+        gallina1.mostrarEstado();
+        gallina2.mostrarEstado();
+        
+        gallina1.envejecer();
+        gallina2.envejecer();
+        
+        gallina1.ponerHuevos();
+        gallina2.ponerHuevos();
+        
+        gallina1.mostrarEstado();
+        gallina2.mostrarEstado();
+
+
+      //Ejercicio 5
+
+        
     }
     }
     
