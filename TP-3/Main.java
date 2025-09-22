@@ -55,6 +55,10 @@ public class TPIII {
         nuevoLibro.mostrarInfo();
 
       //Ejercicio 4 
+
+        Gallina gallina1 = new Gallina();
+        Gallina gallina2 = new Gallina();
+            
         gallina1.setIdGallina(145);
         gallina1.setEdadGallina(3);
         gallina1.setHuevosPuestos(4);
