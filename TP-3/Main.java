@@ -82,7 +82,26 @@ public class TPIII {
 
 
       //Ejercicio 5
+        NaveEspacial nuevaNave = new NaveEspacial();
+        
+        nuevaNave.setNombre("Laica");
+        nuevaNave.setCombustible(50);
+        
+        //Estado Inicial
+        nuevaNave.mostrarEstado();
+        
+        //Avanzar sin recargar
+        nuevaNave.avanzar(100);
+        
+        nuevaNave.mostrarEstado();
 
+        
+        //Recarga
+        nuevaNave.recargarCombustible(70);
+        nuevaNave.avanzar(100);
+        nuevaNave.mostrarEstado();
+
+        
         
     }
     }
