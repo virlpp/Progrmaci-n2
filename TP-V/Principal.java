@@ -57,6 +57,14 @@ public class Relaciones1a1 {
         
        /////////////////////////////////Ejercicio 4/////////////////////////////////////
 
+        public static void main(String[] args) {
+        
+        PlacaMadre placaMadre = new PlacaMadre("AMD", "4561");
+        Propietario propietario = new Propietario("Gonzalo", "45651123");
+        Computadora computadora = new Computadora("Intel", "453", placaMadre);
+        
+        System.out.println(computadora);
+    }
     }
     
 }
