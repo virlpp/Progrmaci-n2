@@ -21,7 +21,22 @@ public class Relaciones1a1 {
 
       /////////////////////////////////Ejercicio 2/////////////////////////////////////
 
-      
+      //Agrego los parámetros a los atributos
+        Bateria bateria = new Bateria("LKG", 5000);
+        Usuario usuario = new Usuario("Jorge Martinez", "12458796");
+        Celular celular = new Celular("35464634", "Nokia", "110", bateria);
+        
+        //Relacion bidireccional en Celular
+        celular.setUsuario(usuario);
+        
+        //Relacion bidireccional en Usuario
+        usuario.setCelular(celular);
+        
+        //Imprimo mensajes para ver la información
+        System.out.println(celular); //Agregar toString para no ver la referencia del objeto
+        System.out.println(celular.getBateria()); //Agregar toString para no ver la referencia del objeto
+        System.out.println(usuario.getNombre() + " tiene el celular "+ usuario.getCelular().getMarca() + " modelo " + usuario.getCelular().getModelo()+ " a su nombre.");
+        
     }
     
 }
