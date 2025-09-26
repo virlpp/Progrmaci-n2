@@ -24,6 +24,10 @@ public class Pasaporte {
     public Titular getTitular() {
         return titular;
     }
+    
+    public String getNumero() {
+        return numero;
+    }
    
     //Setter y validación Titular
     public void setTitular(Titular titular) {
