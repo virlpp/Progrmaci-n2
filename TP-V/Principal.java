@@ -36,7 +36,17 @@ public class Relaciones1a1 {
         System.out.println(celular); //Agregar toString para no ver la referencia del objeto
         System.out.println(celular.getBateria()); //Agregar toString para no ver la referencia del objeto
         System.out.println(usuario.getNombre() + " tiene el celular "+ usuario.getCelular().getMarca() + " modelo " + usuario.getCelular().getModelo()+ " a su nombre.");
+
+      /////////////////////////////////Ejercicio 3/////////////////////////////////////
+      
+        Autor autor = new Autor("Gabriel Garcia Marquez", "colombiano");
+        Editorial editorial = new Editorial("Planeta","Enrique Butty 275, CABA");
+        Libro libro = new Libro("Cien años de soledad", "9780060114183", autor, editorial );
         
+        
+        //Imprimo mensaje
+        System.out.println(libro);
+      
     }
     
 }
