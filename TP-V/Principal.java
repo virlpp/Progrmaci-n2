@@ -46,7 +46,17 @@ public class Relaciones1a1 {
         
         //Imprimo mensaje
         System.out.println(libro);
-      
+
+       /////////////////////////////////Ejercicio 4/////////////////////////////////////
+
+        Banco banco = new Banco("Nacion", "30-15661568-0");
+        Cliente cliente = new Cliente("Roberto Gomez", "23546987"); //Corregir this.cliente null
+        TarjetaDeCredito tarjetaDeCredito = new TarjetaDeCredito(44354684, "21/8/2030", banco);
+
+        System.out.println(tarjetaDeCredito);
+        
+       /////////////////////////////////Ejercicio 4/////////////////////////////////////
+
     }
     
 }
