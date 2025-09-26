@@ -1,18 +1,22 @@
+import java.time.LocalDate;
+
 public class Pasaporte {
     
     //Atributos Propios
     private String numero;
-    private int fechaEmision;
+    private LocalDate fechaEmision;
     
     //Atributos de otras clases
     private Titular titular; //Asociacion bidireccional
     private Foto foto; //Conposicion, Foto debe estar adentro de Pasaporte y ser creado dentro de la clase.
-    boolean getTitular;
+   
     
     //Constructor
-    public Pasaporte(String numero, int fechaEmision) {
+    public Pasaporte(String numero, LocalDate fechaEmision, Foto foto) {
         this.numero = numero;
         this.fechaEmision = fechaEmision;
+        this.foto = foto;
+        
     }
     
     //Setters y Getters
@@ -30,6 +34,7 @@ public class Pasaporte {
     }
     
 }
+
 
 //////////////////////////////////////////////////////////////////////////////////
 
